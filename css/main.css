@@ -1885,7 +1885,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fbb3f9;
+  background: #ff473e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3089,7 +3089,6 @@ header.post-header {
   }
 }
 .post {
-  margin-top: 60px;
   margin-bottom: 60px;
   padding: 25px;
   background: rgba(255,255,255,0.9) none repeat scroll !important;
@@ -3132,4 +3131,7 @@ img.img-topic {
   color: #fc6423;
   border-bottom: none;
   border-bottom: 1px solid #fc6423;
+}
+.posts-expand {
+  padding-top: 0px;
 }
