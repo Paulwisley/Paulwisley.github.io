@@ -99,7 +99,7 @@
 <meta property="og:description" content="熟悉Objective-C1. Objective-C 起源 在C语言的基础上增加了面向对象特性，而区别于C++的是，该语言使用&amp;quot;消息结构&amp;quot;,而非&amp;quot;函数调用&amp;quot;。相当于是C语言的超集。  Objective-C是由Smalltalk演化而来，后者是消息型语言的鼻祖。 消息语言和函数调用之间的区别：最核心的区别在于消息语言的代码都是由Runtime决定的,而函数">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/Effective-Objective-C/熟悉Objective-C/abstract.jpg">
-<meta property="og:updated_time" content="2019-09-06T02:42:07.000Z">
+<meta property="og:updated_time" content="2019-09-06T03:07:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="熟悉Objective-C">
 <meta name="twitter:description" content="熟悉Objective-C1. Objective-C 起源 在C语言的基础上增加了面向对象特性，而区别于C++的是，该语言使用&amp;quot;消息结构&amp;quot;,而非&amp;quot;函数调用&amp;quot;。相当于是C语言的超集。  Objective-C是由Smalltalk演化而来，后者是消息型语言的鼻祖。 消息语言和函数调用之间的区别：最核心的区别在于消息语言的代码都是由Runtime决定的,而函数">
@@ -430,8 +430,8 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/abstract.jpg" rel="gallery_ck07io7ya0002rdcakcbvbskf" itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="/abstract.jpg" itemprop="contentUrl">
+              <a class="post-gallery-img fancybox" href="/./abstract.jpg" rel="gallery_ck07jhfmp0002szcapr48kpmj" itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="/./abstract.jpg" itemprop="contentUrl">
               </a>
             
           
@@ -454,7 +454,7 @@
 <blockquote>
 <p><font size="8">“</font><br>运行期组件本质上就是一种与开发者所编写代码相链接的<strong>动态库(dinamic library)</strong>,其代码能把开发者编写的所有程序粘合起来。这样的话，只需要更新运行期组件，即可提升应用程序性能。而那些工作都在编译期完成的语言，每次更新都需要通过编译来改善性能。</p>
 </blockquote>
-<h3 id="2-尽量少引入其他头文件"><a href="#2-尽量少引入其他头文件" class="headerlink" title="2. 尽量少引入其他头文件"></a>2. 尽量少引入其他头文件</h3><p>尽量少引入其他头文件，只在不得不引用的时候才引用，这样可以减少类之间的耦合性。<br>在OC中，存在这样的引用机制(如下图)：A引入了XXX.h头文件，B在某个时刻引入了A，那么B会间接引入了XXX.h文件，同样A的所有子类也会相应的引入了XXX.h头文件。但有的时候，B和A的一些子类并不想知道XXX.h的全部细节，不用引入完整的头文件。<br><img src="exampImport.png" alt></p>
+<h3 id="2-尽量少引入其他头文件"><a href="#2-尽量少引入其他头文件" class="headerlink" title="2. 尽量少引入其他头文件"></a>2. 尽量少引入其他头文件</h3><p>尽量少引入其他头文件，只在不得不引用的时候才引用，这样可以减少类之间的耦合性。<br>在OC中，存在这样的引用机制(如下图)：A引入了XXX.h头文件，B在某个时刻引入了A，那么B会间接引入了XXX.h文件，同样A的所有子类也会相应的引入了XXX.h头文件。但有的时候，B和A的一些子类并不想知道XXX.h的全部细节，不用引入完整的头文件。<br><img src="./exampImport.png" alt></p>
 
       
     </div>
